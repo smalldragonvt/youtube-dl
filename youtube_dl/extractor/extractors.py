@@ -1194,7 +1194,9 @@ from .tvnet import TVNetIE
 from .tvnoe import TVNoeIE
 from .tvnow import (
     TVNowIE,
-    TVNowListIE,
+    TVNowNewIE,
+    TVNowSeasonIE,
+    TVNowAnnualIE,
     TVNowShowIE,
 )
 from .tvp import (
