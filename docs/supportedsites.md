@@ -361,6 +361,7 @@
  - **hitbox**
  - **hitbox:live**
  - **HitRecord**
+ - **hketv**: 香港教育局教育電視 (HKETV) Educational Television, Hong Kong Educational Bureau
  - **HornBunny**
  - **HotNewHipHop**
  - **hotstar**
@@ -386,6 +387,7 @@
  - **IndavideoEmbed**
  - **InfoQ**
  - **Instagram**
+ - **instagram:tag**: Instagram hashtag search
  - **instagram:user**: Instagram user profile
  - **Internazionale**
  - **InternetVideoArchive**
@@ -474,6 +476,7 @@
  - **mailru:music**: Музыка@Mail.Ru
  - **mailru:music:search**: Музыка@Mail.Ru
  - **MakerTV**
+ - **MallTV**
  - **mangomolo:live**
  - **mangomolo:video**
  - **ManyVids**
@@ -544,6 +547,7 @@
  - **MyVisionTV**
  - **n-tv.de**
  - **natgeo:video**
+ - **NationalGeographicTV**
  - **Naver**
  - **NBA**
  - **NBC**
@@ -774,6 +778,7 @@
  - **safari:api**
  - **safari:course**: safaribooksonline.com online courses
  - **SAKTV**
+ - **SaltTV**
  - **Sapo**: SAPO Vídeos
  - **savefrom.net**
  - **SBS**: sbs.com.au
@@ -823,6 +828,7 @@
  - **southpark.nl**
  - **southparkstudios.dk**
  - **SpankBang**
+ - **SpankBangPlaylist**
  - **Spankwire**
  - **Spiegel**
  - **Spiegel:Article**: Articles on spiegel.de
@@ -1053,7 +1059,6 @@
  - **Voot**
  - **VoxMedia**
  - **VoxMediaVolume**
- - **Vporn**
  - **vpro**: npo.nl, ntr.nl, omroepwnl.nl, zapp.nl and npo3.nl
  - **Vrak**
  - **VRT**: deredactie.be, sporza.be, cobra.be and cobra.canvas.be
@@ -1067,6 +1072,7 @@
  - **VVVVID**
  - **VyboryMos**
  - **Vzaar**
+ - **Wakanim**
  - **Walla**
  - **WalyTV**
  - **washingtonpost**
