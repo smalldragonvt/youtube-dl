@@ -994,6 +994,7 @@ from .safari import (
     SafariIE,
     SafariApiIE,
     SafariCourseIE,
+    SafariLearningPathIE
 )
 from .sapo import SapoIE
 from .savefrom import SaveFromIE
