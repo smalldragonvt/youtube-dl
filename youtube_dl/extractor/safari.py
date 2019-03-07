@@ -3,6 +3,9 @@ from __future__ import unicode_literals
 
 import re
 
+from collections import OrderedDict
+from itertools import repeat
+
 from .common import InfoExtractor
 
 from ..utils import (
@@ -288,8 +291,8 @@ class SafariLearningPathIE(SafariBaseIE):
             course_id, 'Downloading course Web Page')
 
         link_ids = re.findall(r'(?:\"|\/)([0-9]{10,13}\-video[0-9_]+)\"', course_page)
-        link_ids = list(set(link_ids))
-        link_ids.sort()
+
+        link_ids = list(OrderedDict(zip(link_ids, repeat(None))))
 
         title = self._search_regex(r'\"title\"\:[/s]*\"([^\"]*)\"', course_page, 'title')
 
