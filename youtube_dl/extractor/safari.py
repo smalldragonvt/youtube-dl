@@ -288,6 +288,9 @@ class SafariLearningPathIE(SafariBaseIE):
             course_id, 'Downloading course Web Page')
 
         link_ids = re.findall(r'(?:\"|\/)([0-9]{10,13}\-video[0-9_]+)\"', course_page)
+        link_ids = list(set(link_ids))
+        link_ids.sort()
+
         title = self._search_regex(r'\"title\"\:[/s]*\"([^\"]*)\"', course_page, 'title')
 
         if len(link_ids) is 0:
