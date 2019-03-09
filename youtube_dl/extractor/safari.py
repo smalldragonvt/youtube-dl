@@ -3,8 +3,7 @@ from __future__ import unicode_literals
 
 import re
 
-from collections import OrderedDict
-from itertools import repeat
+from json import loads
 
 from .common import InfoExtractor
 
@@ -290,19 +289,23 @@ class SafariLearningPathIE(SafariBaseIE):
             url,
             course_id, 'Downloading course Web Page')
 
-        link_ids = re.findall(r'(?:\"|\/)([0-9]{10,13}\-video[0-9_]+)\"', course_page)
+        # Find all dict in page
+        link_ids = re.findall(r'{.*}', course_page)
 
-        link_ids = list(OrderedDict(zip(link_ids, repeat(None))))
+        # Load content of 2nd item which has information about chapters
+        link_ids = loads(link_ids[1])
 
-        title = self._search_regex(r'\"title\"\:[/s]*\"([^\"]*)\"', course_page, 'title')
+        links = [x for x in link_ids["chapters"] if "part" not in x]
 
-        if len(link_ids) is 0:
+        title = link_ids["learningPaths"][course_id]["title"]
+
+        if len(links) is 0:
             raise ExtractorError(
                 'No link IDs found for course %s' % course_id, expected=True)
 
         entries = [
             self.url_result(url + "/" + link, SafariIE.ie_key())
-            for link in link_ids]
+            for link in links]
 
         course_title = title
 
