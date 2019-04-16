@@ -107,6 +107,7 @@ from .behindkink import BehindKinkIE
 from .bellmedia import BellMediaIE
 from .beatport import BeatportIE
 from .bet import BetIE
+from .bfi import BFIPlayerIE
 from .bigflix import BigflixIE
 from .bild import BildIE
 from .bilibili import (
@@ -441,10 +442,7 @@ from .goshgay import GoshgayIE
 from .gputechconf import GPUTechConfIE
 from .groupon import GrouponIE
 from .hark import HarkIE
-from .hbo import (
-    HBOIE,
-    HBOEpisodeIE,
-)
+from .hbo import HBOIE
 from .hearthisat import HearThisAtIE
 from .heise import HeiseIE
 from .hellporno import HellPornoIE
@@ -870,6 +868,10 @@ from .picarto import (
 from .piksel import PikselIE
 from .pinkbike import PinkbikeIE
 from .pladform import PladformIE
+from .platzi import (
+    PlatziIE,
+    PlatziCourseIE,
+)
 from .playfm import PlayFMIE
 from .playplustv import PlayPlusTVIE
 from .plays import PlaysTVIE
@@ -1092,6 +1094,7 @@ from .streamcloud import StreamcloudIE
 from .streamcz import StreamCZIE
 from .streetvoice import StreetVoiceIE
 from .stretchinternet import StretchInternetIE
+from .stv import STVPlayerIE
 from .sunporno import SunPornoIE
 from .svt import (
     SVTIE,
@@ -1450,6 +1453,8 @@ from .xxxymovies import XXXYMoviesIE
 from .yahoo import (
     YahooIE,
     YahooSearchIE,
+    YahooGyaOPlayerIE,
+    YahooGyaOIE,
 )
 from .yandexdisk import YandexDiskIE
 from .yandexmusic import (
