@@ -177,7 +177,10 @@ from .cbsnews import (
     CBSNewsLiveVideoIE,
 )
 from .cbssports import CBSSportsIE
-from .ccc import CCCIE
+from .ccc import (
+    CCCIE,
+    CCCPlaylistIE,
+)
 from .ccma import CCMAIE
 from .cctv import CCTVIE
 from .cda import CDAIE
@@ -194,6 +197,7 @@ from .chirbit import (
     ChirbitProfileIE,
 )
 from .cinchcast import CinchcastIE
+from .cinemax import CinemaxIE
 from .ciscolive import (
     CiscoLiveSessionIE,
     CiscoLiveSearchIE,
@@ -282,10 +286,6 @@ from .douyutv import (
 from .dplay import (
     DPlayIE,
     DPlayItIE,
-)
-from .dramafever import (
-    DramaFeverIE,
-    DramaFeverSeriesIE,
 )
 from .dreisat import DreiSatIE
 from .drbonanza import DRBonanzaIE
@@ -808,6 +808,8 @@ from .nrk import (
     NRKTVSeasonIE,
     NRKTVSeriesIE,
 )
+from .nrl import NRLTVIE
+from .ntvcojp import NTVCoJpCUIE
 from .ntvde import NTVDeIE
 from .ntvru import NTVRuIE
 from .nytimes import (
@@ -831,7 +833,10 @@ from .ooyala import (
     OoyalaIE,
     OoyalaExternalIE,
 )
-from .openload import OpenloadIE
+from .openload import (
+    OpenloadIE,
+    VerystreamIE,
+)
 from .ora import OraTVIE
 from .orf import (
     ORFTVthekIE,
@@ -1032,7 +1037,10 @@ from .skynewsarabia import (
     SkyNewsArabiaIE,
     SkyNewsArabiaArticleIE,
 )
-from .skysports import SkySportsIE
+from .sky import (
+    SkyNewsIE,
+    SkySportsIE,
+)
 from .slideshare import SlideshareIE
 from .slideslive import SlidesLiveIE
 from .slutload import SlutloadIE
@@ -1096,6 +1104,10 @@ from .streetvoice import StreetVoiceIE
 from .stretchinternet import StretchInternetIE
 from .stv import STVPlayerIE
 from .sunporno import SunPornoIE
+from .sverigesradio import (
+    SverigesRadioEpisodeIE,
+    SverigesRadioPublicationIE,
+)
 from .svt import (
     SVTIE,
     SVTPageIE,
@@ -1417,10 +1429,6 @@ from .weiqitv import WeiqiTVIE
 from .wimp import WimpIE
 from .wistia import WistiaIE
 from .worldstarhiphop import WorldStarHipHopIE
-from .wrzuta import (
-    WrzutaIE,
-    WrzutaPlaylistIE,
-)
 from .wsj import (
     WSJIE,
     WSJArticleIE,
