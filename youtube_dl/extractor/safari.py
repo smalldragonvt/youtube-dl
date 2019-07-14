@@ -312,7 +312,7 @@ class SafariLearningPathIE(SafariBaseIE):
         # Load content of 2nd item which has information about chapters
         link_ids = loads(link_ids[1])
 
-        links = [x for x in link_ids["chapters"] if "part" not in x and x.startswith(course_id)]
+        links = [x for x in link_ids["chapters"] if link_ids["chapters"][x]["content_format"] == "video-clip"]
 
         title = link_ids["learningPaths"][course_id]["title"]
 
