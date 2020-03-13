@@ -317,7 +317,7 @@ class SafariLearningPathIE(SafariBaseIE):
 
         title = link_ids["learningPaths"][course_id]["title"]
 
-        if len(links) is 0:
+        if len(links) == 0:
             raise ExtractorError(
                 'No link IDs found for course %s' % course_id, expected=True)
 
